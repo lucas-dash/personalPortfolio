@@ -1,51 +1,51 @@
+import About from '@/components/About';
+import Navbar from '@/components/Navbar';
+import { Projects } from '@/components/Projects';
+import Skills from '@/components/Skills';
 import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-      <header className="fixed inset-0 top-4 w-[95%] sm:w-[90%] mx-auto bg-primary rounded-full h-14 font-medium text-slate-50 flex items-center max-[445px]:justify-between gap-4 px-3 max-w-7xl">
-        <div className="min-w-[40px] min-h-[40px] rounded-full gap-2 bg-slate-50 flex items-center justify-center">
-          <Image src={'/MoonLogo.svg'} alt="logo" width={34} height={34} />
-        </div>
+      <Navbar />
 
-        <nav className="w-full max-[445px]:hidden">
-          <ul className="flex items-center justify-center gap-10">
-            <li>{'//About'}</li>
-            <li>{'//Skills'}</li>
-            <li>{'//Projects'}</li>
-          </ul>
-        </nav>
+      <main className="mt-[calc(16px+56px)] h-[calc(100vh-72px)]">
+        <section className="w-[90%] md:w-4/5 mx-auto h-full">
+          <div className="flex flex-col items-center justify-around h-full">
+            <div className="flex flex-col gap-7">
+              <div className="flex items-center md:items-end flex-col gap-5 md:flex-row">
+                <div className="w-[130px] h-[130px] rounded-full">
+                  <Image
+                    src={'/Lou2.png'}
+                    alt="profile photo"
+                    width={130}
+                    height={130}
+                  />
+                </div>
+                <h1 className="text-4xl font-inter text-center font-medium md:pb-3">
+                  Lucas Homolka
+                </h1>
+              </div>
 
-        <Button variant={'accent'} className="min-[445px]:hidden w-full">
-          Contact
-        </Button>
+              <h3 className="font-medium font-inter text-3xl md:text-4xl lg:text-5xl text-center">
+                Creative{' '}
+                <span className="font-semibold">Front-end Developer</span>
+              </h3>
+            </div>
 
-        <Button
-          size={'icon'}
-          variant={'ghost'}
-          className="rounded-full min-w-[40px] min-[445px]:hidden"
-        >
-          <ChevronDown />
-        </Button>
-      </header>
-
-      <main className="mt-[calc(16px+56px)]">
-        <section>
-          <div>
-            <div className="w-[130px] h-[130px] bg-slate-500 rounded-full"></div>
-            <h1>Lucas Homolka</h1>
-            <h3>
-              Creative <span>Front-end Developer</span>
-            </h3>
-
-            <div className="flex items-center gap-6">
-              <Button>Contact</Button>
-              <Button>Download CV</Button>
+            <div className="flex flex-col sm:flex-row items-center gap-5">
+              <Button className="min-w-[150px]">Contact</Button>
+              <Button variant={'secondary'} className="min-w-[150px]">
+                Download CV
+              </Button>
             </div>
           </div>
         </section>
+
+        <About />
+        <Skills />
+        <Projects />
       </main>
     </>
   );

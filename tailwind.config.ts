@@ -30,10 +30,15 @@ module.exports = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
       colors: {
         primary: '#1B1B1F',
         secondary: '#3F96FE',
         accent: '#6A52FF',
+        white: '#FCFCFC',
       },
     },
   },
