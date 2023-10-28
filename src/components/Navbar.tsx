@@ -53,7 +53,7 @@ export default function Navbar() {
       }}
     >
       <div className="min-w-[40px] min-h-[40px] rounded-full gap-2 bg-slate-50 flex items-center justify-center">
-        <Image src={'/MoonLogo.svg'} alt="logo" width={34} height={34} />
+        <Image src={'/favicon.svg'} alt="logo" width={44} height={44} />
       </div>
       {/* min-[445px]: */}
       <motion.ul
