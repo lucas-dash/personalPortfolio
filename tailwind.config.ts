@@ -39,6 +39,7 @@ module.exports = {
         secondary: '#3F96FE',
         accent: '#6A52FF',
         white: '#FCFCFC',
+        beige: '#F8F7F4',
       },
     },
   },

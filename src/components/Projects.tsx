@@ -7,8 +7,8 @@ import { Badge } from './ui/badge';
 
 export const Projects = () => {
   return (
-    <section className="bg-primary md:w-[95%] mx-auto h-max rounded-[56px] p-6 md:p-10">
-      <h2 className="text-3xl lg:text-4xl pl-6 pb-8 sm:px-16 font-bold text-slate-50">
+    <section className="bg-slate-950 md:w-[95%] mx-auto h-max rounded-[56px] p-6 md:p-10">
+      <h2 className="text-3xl lg:text-4xl pl-6 pb-10 sm:px-16 font-bold text-slate-50 container">
         {'//Projects'}
       </h2>
 
@@ -18,18 +18,19 @@ export const Projects = () => {
             return (
               <article
                 key={id}
-                className="rounded-[30px] bg-white flex flex-col md:flex-row justify-between gap-6 px-8 py-9"
+                className="rounded-[30px] bg-white flex flex-col md:flex-row justify-between gap-6 px-8 py-9 max-w-6xl mx-auto w-full"
               >
-                <div className="rounded-2xl border border-slate-950 overflow-hidden aspect-video min-w-[50%]">
+                <div className="rounded-2xl border border-slate-950 overflow-hidden aspect-video min-w-[50%] flex items-center justify-center">
                   <Image
                     src={image}
                     alt={`${name} project image`}
                     width={600}
                     height={300}
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
-                <section className="flex flex-col justify-between min-w-[45%] min-h-[200px]">
+                <section className="flex flex-col gap-5 justify-between min-w-[45%] min-h-[200px]">
                   <div>
                     <div className="flex items-center justify-between gap-2">
                       <h3 className="font-medium text-xl">{name}</h3>

@@ -10,7 +10,7 @@ const mono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'Personal Portfolio',
-  description: 'Created by Lucas Moonshot',
+  description: 'Created by Lucas Homolka',
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${mono.variable} font-mono`}>
+      <body className={`${inter.variable} ${mono.variable} font-inter`}>
         {children}
       </body>
     </html>

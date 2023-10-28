@@ -1,11 +1,11 @@
 export default function About() {
   return (
-    <section className="bg-primary rounded-[56px] h-max text-slate-50 p-6 md:p-10 my-10 sm:w-[90%] mx-auto">
+    <section className="bg-slate-950 rounded-[56px] h-max text-slate-50 p-6 md:p-10 my-10 sm:w-[90%] mx-auto">
       <h2 className="text-3xl lg:text-4xl pb-5 pl-6 sm:px-16 font-bold">
         {'//About'}
       </h2>
       <div className="flex items-start justify-center h-full">
-        <p className="px-3 sm:px-12 py-5">
+        <p className="px-3 sm:px-12 py-5 font-mono">
           Jmenuji se Lukáš Homolka a jsem Front-end Developer, který se nebojí
           učit nové věci.
           <br />
