@@ -40,7 +40,7 @@ export const Projects = () => {
                         size={'icon'}
                         className="rounded-full"
                       >
-                        <Link href={github}>
+                        <Link href={github} target="_blank">
                           <GithubIcon />
                         </Link>
                       </Button>
@@ -62,7 +62,9 @@ export const Projects = () => {
                   </div>
 
                   <Button className="w-full" asChild>
-                    <Link href={link}>Look At</Link>
+                    <Link href={link} target="_blank">
+                      Look At
+                    </Link>
                   </Button>
                 </section>
               </article>

@@ -33,13 +33,13 @@ export default function Navbar() {
           height: 56,
           borderRadius: 50,
 
-          // alignItems: 'center',
+          alignItems: 'center',
           transition: { delay: 0, duration: 0.3 },
         },
         showNav: {
           height: 200,
           borderRadius: 22,
-          // alignItems: 'start',
+          alignItems: 'start',
           transition: { delay: 0 },
         },
       }}
@@ -55,7 +55,6 @@ export default function Navbar() {
       <div className="min-w-[40px] min-h-[40px] rounded-full gap-2 bg-slate-50 flex items-center justify-center">
         <Image src={'/favicon.svg'} alt="logo" width={44} height={44} />
       </div>
-      {/* min-[445px]: */}
       <motion.ul
         className={`w-full ${
           showNav
@@ -81,22 +80,22 @@ export default function Navbar() {
         ]}
         // transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <li>{'//About'}</li>
-        <li>{'//Skills'}</li>
-        <li>{'//Projects'}</li>
+        <li className="cursor-pointer">{'//About'}</li>
+        <li className="cursor-pointer">{'//Skills'}</li>
+        <li className="cursor-pointer">{'//Projects'}</li>
       </motion.ul>
 
       <motion.div
-        className="w-full [--display-from:none][--display-to:inline-block] [--opacity-from:0.5] [--opacity-to:1]"
+        className="w-full [--display-from:none][--display-to:inline-block] "
         variants={{
           hidden: {
             display: 'var(--display-from, none)',
-            opacity: 'var(--opacity-from)',
+            // opacity: 'var(--opacity-from)',
             transition: { delay: 0, duration: 0.3 },
           },
           visible: {
             display: 'var(--display-to)',
-            opacity: 'var(--opacity-to)',
+            // opacity: 'var(--opacity-to)',
             transition: { delay: 0.2, duration: 0.3 },
           },
         }}

@@ -1,30 +1,18 @@
 import { Button } from './ui/button';
-import Image from 'next/image';
 
 export const Hero = () => {
   return (
     <section className="w-[90%] md:w-4/5 mx-auto h-full">
-      <div className="flex flex-col items-center justify-around h-full">
-        <div className="flex flex-col gap-7">
-          <div className="flex items-center md:items-end flex-col gap-5 md:flex-row">
-            <div className="w-[130px] h-[130px] rounded-full">
-              <Image
-                src={'/Lou2.png'}
-                alt="profile photo"
-                width={130}
-                height={130}
-              />
-            </div>
-            <h1 className="text-4xl font-inter text-center font-medium md:pb-3">
-              Lucas Homolka
-            </h1>
-          </div>
-
-          <h3 className="font-medium font-inter text-3xl md:text-4xl lg:text-5xl text-center">
-            Creative{' '}
-            <span className="inline-block bg-gradient-to-r from-secondary to-accent font-semibold text-transparent bg-clip-text px-2">
-              Front-end Developer
+      <div className="flex flex-col items-center justify-evenly h-full">
+        <div className="flex flex-col gap-5">
+          <h1 className="text-2xl sm:text-5xl lg:text-6xl text-center font-medium font-inter">
+            Welcome to my{' '}
+            <span className="inline-block bg-gradient-to-r from-secondary via-green-400 to-accent font-bold text-transparent bg-clip-text p-2 animate-gradient bg-300% text-4xl md:text-6xl lg:text-7xl">
+              Digital Playground
             </span>
+          </h1>
+          <h3 className="text-xl sm:text-2xl font-semibold text-center font-inter">
+            Front-End Developer Portfolio
           </h3>
         </div>
 
