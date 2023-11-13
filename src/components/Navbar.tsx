@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState<boolean>(false);
@@ -80,9 +81,15 @@ export default function Navbar() {
         ]}
         // transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <li className="cursor-pointer">{'//About'}</li>
-        <li className="cursor-pointer">{'//Skills'}</li>
-        <li className="cursor-pointer">{'//Projects'}</li>
+        <li>
+          <Link href={'#about'}>{'//About'}</Link>
+        </li>
+        <li>
+          <Link href={'#skills'}>{'//Skills'}</Link>
+        </li>
+        <li>
+          <Link href={'#projects'}>{'//Projects'}</Link>
+        </li>
       </motion.ul>
 
       <motion.div

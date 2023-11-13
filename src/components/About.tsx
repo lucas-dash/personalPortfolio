@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section className="bg-slate-950 rounded-[56px] h-max text-slate-50 p-6 md:p-10 my-10 sm:w-[90%] mx-auto">
+    <section
+      className="bg-slate-950 rounded-[56px] h-max text-slate-50 p-6 md:p-10 my-10 sm:w-[90%] mx-auto"
+      id="about"
+    >
       <h2 className="text-3xl lg:text-4xl pb-5 pl-6 sm:px-16 font-bold">
         {'//About'}
       </h2>
