@@ -9,8 +9,8 @@ export default function About() {
       </h2>
       <div className="flex items-start justify-center h-full">
         <p className=" sm:px-12 py-5 font-mono">
-          Jmenuji se Lukáš Homolka a jsem Front-end Developer, který se nebojí
-          učit nové věci.
+          Jmenuji se Lukáš a jsem Front-end Developer, který se nebojí učit nové
+          věci.
           <br />
           <br />
           Mám 2 roky praxe a tvořím hlavně webové stránky a pokročilé aplikace v

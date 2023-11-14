@@ -10,7 +10,7 @@ const mono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: 'Personal Portfolio',
-  description: 'Created by Lucas Homolka',
+  description: 'Created by Lucas - spacecode',
 };
 
 export default function RootLayout({
