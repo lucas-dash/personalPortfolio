@@ -9,16 +9,16 @@ export default function About() {
       </h2>
       <div className="flex items-start justify-center h-full">
         <p className=" sm:px-12 py-5 font-mono">
-          Jmenuji se Lukáš a jsem Front-end Developer, který se nebojí učit nové
-          věci.
+          Jmenuji se Lukáš a jsem Junior Front-end Developer, který se nebojí
+          učit nové věci.
           <br />
           <br />
           Mám 2 roky praxe a tvořím hlavně webové stránky a pokročilé aplikace v
-          Reactu.
+          Next.js.
           <br />
           <br />
           Znalosti jsem získal s vlastní pomocí a tvrdé práce, googlováním,
-          tvořením projektů a hlavně kurzem na Codeacademy.com, který mi hodně
+          tvořením projektů a hlavně kurzem na Codecademy.com, který mi hodně
           pomohl na začátku.
           <br />
           <br />
@@ -26,8 +26,8 @@ export default function About() {
           pluje rychlím tempem.
           <br />
           <br />
-          Nyní hledám pozici juniorního vývojáře, abych konečně nastartoval svou
-          kariéru a učil se mezi profesionály.
+          Nyní hledám pozici juniorního vývojáře, abych nastartoval svou kariéru
+          a učil se mezi profesionály.
         </p>
       </div>
     </section>

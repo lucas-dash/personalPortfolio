@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState<boolean>(false);
@@ -82,13 +82,43 @@ export default function Navbar() {
         // transition={{ duration: 0.6, delay: 0.2 }}
       >
         <li>
-          <Link href={'#about'}>{'//About'}</Link>
+          <Link
+            to="about"
+            spy={true}
+            offset={-80}
+            smooth={true}
+            duration={600}
+            aria-label="scroll to About me section"
+            role="button"
+          >
+            {'//About'}
+          </Link>
         </li>
         <li>
-          <Link href={'#skills'}>{'//Skills'}</Link>
+          <Link
+            to="skills"
+            spy={true}
+            offset={-20}
+            smooth={true}
+            duration={600}
+            aria-label="scroll to skills section"
+            role="button"
+          >
+            {'//Skills'}
+          </Link>
         </li>
         <li>
-          <Link href={'#projects'}>{'//Projects'}</Link>
+          <Link
+            to="projects"
+            spy={true}
+            offset={-20}
+            smooth={true}
+            duration={600}
+            aria-label="scroll to projects section"
+            role="button"
+          >
+            {'//Projects'}
+          </Link>
         </li>
       </motion.ul>
 
@@ -109,8 +139,18 @@ export default function Navbar() {
         initial="hidden"
         animate={hidden ? 'visible' : 'hidden'}
       >
-        <Button variant={'accent'} className="w-full">
-          Contact
+        <Button variant={'accent'} className="w-full" asChild>
+          <Link
+            to="contact"
+            spy={true}
+            offset={-20}
+            smooth={true}
+            duration={600}
+            aria-label="scroll to contact section"
+            role="button"
+          >
+            Contact
+          </Link>
         </Button>
       </motion.div>
 

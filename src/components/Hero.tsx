@@ -1,4 +1,6 @@
+'use client';
 import { Button } from './ui/button';
+import { Link } from 'react-scroll';
 
 export const Hero = () => {
   return (
@@ -17,7 +19,19 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-5">
-          <Button className="min-w-[150px]">Contact</Button>
+          <Button className="min-w-[150px]" asChild>
+            <Link
+              role="button"
+              to="contact"
+              spy={true}
+              offset={-20}
+              smooth={true}
+              duration={600}
+              aria-label="scroll to Contact me section"
+            >
+              Contact
+            </Link>
+          </Button>
           <Button variant={'secondary'} className="min-w-[150px]">
             Download CV
           </Button>

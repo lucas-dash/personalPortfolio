@@ -39,33 +39,32 @@ export const Projects = () => {
                       <h3 className="font-medium text-xl">{name}</h3>
                       <Button
                         asChild
-                        variant={'ghost'}
+                        variant={'secondary'}
                         size={'icon'}
                         className="rounded-full"
                       >
-                        <Link href={github} target="_blank">
-                          <GithubIcon />
+                        <Link href={github} target="_blank" rel="noreferrer">
+                          <GithubIcon size={26} />
                         </Link>
                       </Button>
                     </div>
 
-                    <p className="font-inter">{description}</p>
-
-                    <div className="flex items-center flex-wrap gap-2 pt-2">
+                    <div className="flex items-center flex-wrap gap-2 py-3">
                       {techStack.map((tech, index) => (
                         <Badge
                           key={index}
                           variant={'secondary'}
-                          className="bg-secondary rounded-full text-sm hover:bg-secondary"
+                          className="rounded-full text-sm bg-slate-300"
                         >
                           {tech}
                         </Badge>
                       ))}
                     </div>
+                    <p className="font-inter">{description}</p>
                   </div>
 
                   <Button className="w-full" asChild>
-                    <Link href={link} target="_blank">
+                    <Link href={link} target="_blank" rel="noreferrer">
                       Look At
                     </Link>
                   </Button>

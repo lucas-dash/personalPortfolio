@@ -7,12 +7,20 @@ export const Footer = () => {
       <h4>&copy;2023 Build with passion</h4>
       <div className="flex justify-between gap-4 ">
         <div className="bg-primary text-white p-2 rounded-full sca">
-          <Link href={'https://twitter.com/spacecode_'} target="_blank">
+          <Link
+            href={'https://twitter.com/spacecode_'}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Twitter />
           </Link>
         </div>
         <div className="bg-primary text-white p-2 rounded-full">
-          <Link href={'https://github.com/lucas-dash'} target="_blank">
+          <Link
+            href={'https://github.com/lucas-dash'}
+            target="_blank"
+            rel="noreferrer"
+          >
             <GithubIcon />
           </Link>
         </div>
