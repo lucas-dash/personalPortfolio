@@ -8,7 +8,7 @@ import { Badge } from './ui/badge';
 export const Projects = () => {
   return (
     <section
-      className="bg-slate-950 md:w-[95%] mx-auto h-max rounded-[56px] p-6 md:p-10"
+      className="bg-primary md:w-[95%] mx-auto h-max rounded-[56px] p-6 md:p-10"
       id="projects"
     >
       <h2 className="text-3xl lg:text-4xl pl-6 pb-10 sm:px-16 font-bold text-slate-50 container">

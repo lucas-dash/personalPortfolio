@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Contact from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -10,13 +11,14 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="mt-[calc(16px+56px)] h-[calc(100vh-72px)] font-mono">
+      <main className="mt-[calc(16px+56px)] font-mono">
         <Hero />
         <About />
         <Skills />
         <Projects />
-        <Footer />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
