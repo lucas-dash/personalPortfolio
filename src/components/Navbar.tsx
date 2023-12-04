@@ -66,12 +66,12 @@ export default function Navbar() {
           hidden: {
             display: 'var(--display-from, none)',
             opacity: 'var(--opacity-from, 1)',
-            transition: { duration: 0.6, delay: 0 },
+            transition: { duration: 0.1, delay: 0 },
           },
           visible: {
             display: 'var(--display-to, none)',
             opacity: 'var(--opacity-to, 1)',
-            transition: { duration: 0.6, delay: 0 },
+            transition: { duration: 0.6, delay: 0.2 },
           },
         }}
         initial={'hidden'}
@@ -79,7 +79,6 @@ export default function Navbar() {
           hidden && !showNav ? 'hidden' : 'visible',
           showNav ? 'visible' : '',
         ]}
-        // transition={{ duration: 0.6, delay: 0.2 }}
       >
         <li>
           <Link

@@ -34,7 +34,9 @@ export const Projects = () => {
                     />
                   ) : (
                     <div className="flex items-center justify-center">
-                      <p className="font-semibold">I&apos;m working on it...</p>
+                      <p className="font-semibold text-center">
+                        I&apos;m working on it...
+                      </p>
                     </div>
                   )}
                 </div>
