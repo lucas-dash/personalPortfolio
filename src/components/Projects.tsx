@@ -24,13 +24,19 @@ export const Projects = () => {
                 className="rounded-[30px] bg-white flex flex-col md:flex-row justify-between gap-6 px-8 py-9 max-w-6xl mx-auto w-full"
               >
                 <div className="rounded-2xl border border-slate-950 overflow-hidden aspect-video min-w-[50%] flex items-center justify-center">
-                  <Image
-                    src={image}
-                    alt={`${name} project image`}
-                    width={600}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
+                  {image ? (
+                    <Image
+                      src={image}
+                      alt={`${name} project image`}
+                      width={600}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center">
+                      <p className="font-semibold">I&apos;m working on it...</p>
+                    </div>
+                  )}
                 </div>
 
                 <section className="flex flex-col gap-5 justify-between min-w-[45%] min-h-[200px]">
@@ -54,7 +60,7 @@ export const Projects = () => {
                         <Badge
                           key={index}
                           variant={'secondary'}
-                          className="rounded-full text-sm bg-slate-300"
+                          className="rounded-full text-sm bg-slate-300 hover:bg-slate-300"
                         >
                           {tech}
                         </Badge>

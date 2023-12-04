@@ -23,8 +23,18 @@ export const projects = [
     name: 'Expense Tracker',
     description: 'You can record your expenses and set your monthly budget.',
     image: '/expense-tracker.png',
-    techStack: ['React', 'Tailwind', 'React Router'],
+    techStack: ['React', 'Tailwind', 'Typescript', 'React Router'],
     github: 'https://github.com/lucas-dash/Expense-Tracker',
     link: 'https://spend-tracker.netlify.app/',
+  },
+  {
+    id: 4,
+    name: 'Social Media App',
+    description:
+      'Social Media for developers. Posting, commenting and sharing your work.',
+    image: '',
+    techStack: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Supabase'],
+    github: '',
+    link: '',
   },
 ];
