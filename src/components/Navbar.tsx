@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState<boolean>(false);
-  const [hidden, setHidden] = useState(false);
+  const [hidden, setHidden] = useState<boolean>(false);
 
   const { scrollY } = useScroll();
 
@@ -89,6 +89,7 @@ export default function Navbar() {
             duration={600}
             aria-label="scroll to About me section"
             role="button"
+            onClick={() => setShowNav(false)}
           >
             {'//About'}
           </Link>
@@ -102,6 +103,7 @@ export default function Navbar() {
             duration={600}
             aria-label="scroll to skills section"
             role="button"
+            onClick={() => setShowNav(false)}
           >
             {'//Skills'}
           </Link>
@@ -115,6 +117,7 @@ export default function Navbar() {
             duration={600}
             aria-label="scroll to projects section"
             role="button"
+            onClick={() => setShowNav(false)}
           >
             {'//Projects'}
           </Link>
