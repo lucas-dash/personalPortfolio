@@ -17,7 +17,7 @@ export const Projects = () => {
 
       <div className="flex flex-col gap-10">
         {projects.map(
-          ({ id, name, description, github, link, image, techStack }) => {
+          ({ id, title, description, github, link, image, techStack }) => {
             return (
               <article
                 key={id}
@@ -27,7 +27,7 @@ export const Projects = () => {
                   {image ? (
                     <Image
                       src={image}
-                      alt={`${name} project image`}
+                      alt={`${title} project image`}
                       width={600}
                       height={300}
                       className="w-full h-full object-cover"
@@ -44,7 +44,7 @@ export const Projects = () => {
                 <section className="flex flex-col gap-5 justify-between min-w-[45%] min-h-[200px]">
                   <div>
                     <div className="flex items-center justify-between gap-2">
-                      <h3 className="font-medium text-xl">{name}</h3>
+                      <h3 className="font-medium text-xl">{title}</h3>
                       <Button
                         asChild
                         variant={'secondary'}

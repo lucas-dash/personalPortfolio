@@ -16,7 +16,9 @@ export default function Contact() {
       className="min-h-[80vh] flex flex-col items-center justify-center"
     >
       <div className="flex flex-col items-center justify-center p-7">
-        <h3 className="text-3xl font-semibold py-5 sm:py-2">Contact Me</h3>
+        <h3 className="text-3xl lg:text-4xl font-semibold py-5 sm:py-2">
+          Contact Me
+        </h3>
         <p className="text-sm text-center">
           Kontaktujte mě přímo na email
           <Button asChild variant={'link'} className="p-2">

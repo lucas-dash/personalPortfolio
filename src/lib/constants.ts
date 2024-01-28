@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    name: 'Coin Wallet App',
+    title: 'Coin Wallet App',
     description:
       'Set up your own Crypto portfolio and browse coin markets easy.',
     image: '/PortfolioScreen.png',
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: 'Reddit Minify',
+    title: 'Reddit Minify',
     description: 'Browse reddit like on real app.',
     image: '/RedditMinify.png',
     techStack: ['React', 'Tailwind', 'Daisy UI', 'Framer Motion'],
@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: 'Expense Tracker',
+    title: 'Expense Tracker',
     description: 'You can record your expenses and set your monthly budget.',
     image: '/expense-tracker.png',
     techStack: ['React', 'Tailwind', 'Typescript', 'React Router'],
@@ -29,12 +29,128 @@ export const projects = [
   },
   {
     id: 4,
-    name: 'Social Media App',
+    title: 'Social Media App - DevSpace',
     description:
       'Social Media for developers. Posting, commenting and sharing your work.',
     image: '',
     techStack: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Supabase'],
-    github: '',
+    github: 'https://github.com/lucas-dash/DevSpace',
     link: '',
+  },
+];
+
+export const softSkill = [
+  {
+    id: 1,
+    title: 'Communication',
+  },
+  {
+    id: 2,
+    title: 'Deep Work',
+  },
+  {
+    id: 3,
+    title: 'Time-management',
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    title: 'HTML',
+    icon: '/html.svg',
+  },
+  {
+    id: 2,
+    title: 'CSS',
+    icon: '/css.svg',
+  },
+  {
+    id: 3,
+    title: 'Javascript',
+    icon: '/javascript.svg',
+  },
+  {
+    id: 4,
+    title: 'Typescript',
+    icon: '/typescript.svg',
+  },
+  {
+    id: 5,
+    title: 'React',
+    icon: '/react.svg',
+  },
+  {
+    id: 6,
+    title: 'Next.js',
+    icon: '/Next.svg',
+  },
+  {
+    id: 7,
+    title: 'Tailwind Css',
+    icon: '/tailwind.svg',
+  },
+  {
+    id: 8,
+    title: 'Redux',
+    icon: '/redux.svg',
+  },
+  {
+    id: 9,
+    title: 'Python',
+    icon: '/python.svg',
+  },
+  {
+    id: 10,
+    title: 'Shadcn UI',
+    icon: '',
+  },
+  {
+    id: 11,
+    title: 'MUI',
+    icon: '/materialui.svg',
+  },
+  {
+    id: 12,
+    title: 'Figma',
+    icon: '/Figma.svg',
+  },
+  {
+    id: 14,
+    title: 'Supabase',
+    icon: '',
+  },
+  {
+    id: 15,
+    title: 'Firebase',
+    icon: '/firebase.svg',
+  },
+];
+
+export const tools = [
+  {
+    id: 1,
+    title: 'Git',
+    icon: '/git.svg',
+  },
+  {
+    id: 2,
+    title: 'Vite',
+    icon: '/vite.svg',
+  },
+  {
+    id: 3,
+    title: 'Eslint',
+    icon: '/eslint.svg',
+  },
+  {
+    id: 4,
+    title: 'VS Code',
+    icon: '/vscode.svg',
+  },
+  {
+    id: 5,
+    title: 'Npm',
+    icon: '/npm.svg',
   },
 ];
