@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Skills() {
   return (
     <section
-      className="sm:w-[90%] mx-auto h-[calc(100vh-72px)] flex flex-col justify-center gap-14 sm:gap-24"
+      className="sm:w-[90%] mx-auto h-full min-h-[calc(100vh-72px)] flex flex-col justify-center gap-14 sm:gap-24 my-10"
       id="skills"
     >
       <h2 className="text-3xl font-bold text-center pt-4">{'//Skills'}</h2>

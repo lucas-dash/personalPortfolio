@@ -1,16 +1,16 @@
 export const projects = [
   {
-    id: 1,
+    id: 2,
     title: 'Coin Wallet App',
     description:
-      'Set up your own Crypto portfolio and browse coin markets easy.',
+      'Create your own crypto portfolio and easily browse the coin markets in real time. Have all your assets together. Authorization and database via Firebase.',
     image: '/PortfolioScreen.png',
     techStack: ['Nextjs', 'Tailwind', 'Shadcn UI', 'Framer Motion', 'Firebase'],
     github: 'https://github.com/lucas-dash/coinCap-wallet',
     link: 'https://coin-cap-wallet.vercel.app/',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Reddit Minify',
     description: 'Browse reddit like on real app.',
     image: '/RedditMinify.png',
@@ -28,14 +28,14 @@ export const projects = [
     link: 'https://spend-tracker.netlify.app/',
   },
   {
-    id: 4,
-    title: 'Social Media App - DevSpace',
+    id: 1,
+    title: 'DevSpace - Social Media App',
     description:
-      'Social Media for developers. Posting, commenting and sharing your work.',
-    image: '',
+      'Social media for developers. You can publish posts, comment, share your work and follow other users. Authorization and database via Supabase.',
+    image: '/dev-space.png',
     techStack: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Supabase'],
     github: 'https://github.com/lucas-dash/DevSpace',
-    link: '',
+    link: 'https://dev-space-social.vercel.app/',
   },
 ];
 
@@ -93,7 +93,7 @@ export const skills = [
   {
     id: 8,
     title: 'Redux',
-    icon: '/redux.svg',
+    icon: '/Redux.svg',
   },
   {
     id: 9,

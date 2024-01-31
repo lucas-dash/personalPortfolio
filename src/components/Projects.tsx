@@ -16,8 +16,9 @@ export const Projects = () => {
       </h2>
 
       <div className="flex flex-col gap-10">
-        {projects.map(
-          ({ id, title, description, github, link, image, techStack }) => {
+        {projects
+          .sort((a, b) => a.id - b.id)
+          .map(({ id, title, description, github, link, image, techStack }) => {
             return (
               <article
                 key={id}
@@ -62,7 +63,7 @@ export const Projects = () => {
                         <Badge
                           key={index}
                           variant={'secondary'}
-                          className="rounded-full text-sm bg-slate-300 hover:bg-slate-300"
+                          className="rounded-full text-sm bg-slate-200 hover:bg-slate-300"
                         >
                           {tech}
                         </Badge>
@@ -79,8 +80,7 @@ export const Projects = () => {
                 </section>
               </article>
             );
-          }
-        )}
+          })}
       </div>
     </section>
   );
