@@ -3,37 +3,67 @@ export const projects = [
     id: 2,
     title: 'Coin Wallet App',
     description:
-      'Create your own crypto portfolio and easily browse the coin markets in real time. Have all your assets together. Authorization and database via Firebase.',
-    image: '/PortfolioScreen.png',
-    techStack: ['Nextjs', 'Tailwind', 'Shadcn UI', 'Framer Motion', 'Firebase'],
+      'Vytvořte si vlastní kryptoměnové portfolio. Můžete přidávat, upravovat a mazat své zakoupené kryptoměny z portfolia a sledovat celkový stav svých aktiv. Ukládání dat a přihlášení je vytvořeno pomocí Firebase. CoinCap API je použito pro získání aktuálních cen kryptoměn.',
+    image: '/coincap.png',
+    techStack: [
+      'Nextjs',
+      'Typescript',
+      'Tailwindcss',
+      'Shadcn UI',
+      'Framer Motion',
+      'Firebase',
+      'CoinCap API',
+    ],
     github: 'https://github.com/lucas-dash/coinCap-wallet',
     link: 'https://coin-cap-wallet.vercel.app/',
   },
   {
-    id: 4,
-    title: 'Reddit Minify',
-    description: 'Browse reddit like on real app.',
-    image: '/RedditMinify.png',
-    techStack: ['React', 'Tailwind', 'Daisy UI', 'Framer Motion'],
-    github: 'https://github.com/lucas-dash/reddit-minify',
-    link: 'https://reddit-minify.netlify.app/',
+    id: 3,
+    title: 'Photo Portfolio',
+    description:
+      'Fotografické portfolio s možností přídávání nových fotech přes CDN. Animace vytvořeny pomocí Framer Motion. Next.js App router jsem použil pro snadné vytváření nových stránek.',
+    image: '/photo-portfolio.png',
+    techStack: [
+      'Next.js',
+      'Typescript',
+      'Tailwindcss',
+      'Shadcn UI',
+      'Framer Motion',
+      'Cloudinary CDN',
+    ],
+    github: 'https://github.com/lucas-dash/Photography-Portfolio',
+    link: 'https://lu-homolkova.vercel.app/',
   },
   {
-    id: 3,
-    title: 'Expense Tracker',
-    description: 'You can record your expenses and set your monthly budget.',
-    image: '/expense-tracker.png',
-    techStack: ['React', 'Tailwind', 'Typescript', 'React Router'],
-    github: 'https://github.com/lucas-dash/Expense-Tracker',
-    link: 'https://spend-tracker.netlify.app/',
+    id: 4,
+    title: 'Event.log',
+    description:
+      'Aplikace pro ukládání a prohlížení událostí po celém světě. Uživatelé mohou přidávat, upravovat a mazat své události. Autorizace a databáze pomocí Supabase. Mapbox jsem použil pro zobrazení událostí na mapě. Na této aplikaci stále ještě pracuji.',
+    image: '',
+    techStack: [
+      'Next.js',
+      'Typescript',
+      'Tailwindcss',
+      'Shadcn UI',
+      'Supabase',
+      'Mapbox',
+    ],
+    github: 'https://github.com/lucas-dash/event.log',
+    link: '',
   },
   {
     id: 1,
-    title: 'DevSpace - Social Media App',
+    title: 'DevSpace',
     description:
-      'Social media for developers. You can publish posts, comment, share your work and follow other users. Authorization and database via Supabase.',
+      'Sociální síť pro vývojáře. Uživatelé mohou přidávat, upravovat a mazat své příspěvky, komentovat a lajkovat příspěvky ostatních uživatelů, ale mohou také prezentovat své dovednosti a informovat organizace o své dostupnosti pro práci. Pro autorizaci a správu databáze je využíván Supabase.',
     image: '/dev-space.png',
-    techStack: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Supabase'],
+    techStack: [
+      'Next.js',
+      'Typescript',
+      'Tailwindcss',
+      'Shadcn UI',
+      'Supabase',
+    ],
     github: 'https://github.com/lucas-dash/DevSpace',
     link: 'https://dev-space-social.vercel.app/',
   },
@@ -42,15 +72,35 @@ export const projects = [
 export const softSkill = [
   {
     id: 1,
-    title: 'Communication',
+    title: 'Adaptace a rychlé učení',
   },
   {
     id: 2,
-    title: 'Deep Work',
+    title: 'Zvědavost',
   },
   {
     id: 3,
-    title: 'Time-management',
+    title: 'Kreativita',
+  },
+  {
+    id: 5,
+    title: 'Organizace času a úkolů',
+  },
+  {
+    id: 6,
+    title: 'Deep Work',
+  },
+  {
+    id: 7,
+    title: 'Problem-Solving',
+  },
+  {
+    id: 8,
+    title: 'Teamwork',
+  },
+  {
+    id: 9,
+    title: 'Trpělivost',
   },
 ];
 
@@ -87,7 +137,7 @@ export const skills = [
   },
   {
     id: 7,
-    title: 'Tailwind Css',
+    title: 'Tailwind CSS',
     icon: '/tailwind.svg',
   },
   {
@@ -97,8 +147,8 @@ export const skills = [
   },
   {
     id: 9,
-    title: 'Python',
-    icon: '/python.svg',
+    title: 'Zustand',
+    icon: '',
   },
   {
     id: 10,
@@ -112,8 +162,8 @@ export const skills = [
   },
   {
     id: 12,
-    title: 'Figma',
-    icon: '/Figma.svg',
+    title: 'Framer Motion',
+    icon: '',
   },
   {
     id: 14,
@@ -135,8 +185,8 @@ export const tools = [
   },
   {
     id: 2,
-    title: 'Vite',
-    icon: '/vite.svg',
+    title: 'Figma',
+    icon: '/Figma.svg',
   },
   {
     id: 3,

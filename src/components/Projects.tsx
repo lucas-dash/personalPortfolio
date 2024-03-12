@@ -34,7 +34,8 @@ export const Projects = () => {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center flex-col">
+                      <p>🚧</p>
                       <p className="font-semibold text-center">
                         I&apos;m working on it...
                       </p>
@@ -74,7 +75,7 @@ export const Projects = () => {
 
                   <Button className="w-full" asChild>
                     <Link href={link} target="_blank" rel="noreferrer">
-                      Look At
+                      {link ? 'Look At' : 'Stay tuned!'}
                     </Link>
                   </Button>
                 </section>

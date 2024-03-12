@@ -54,7 +54,7 @@ export default function Contact() {
         <Input
           type="email"
           name="senderEmail"
-          placeholder="Your E-mail"
+          placeholder="JohnDoe@gmail.com"
           className="rounded-xl"
           required
         />

@@ -24,7 +24,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
-      <body className={`${inter.variable} ${mono.variable} font-inter`}>
+      <body
+        className={`${inter.variable} ${mono.variable} font-inter scroll-smooth`}
+      >
         {children}
         <Toaster />
       </body>
