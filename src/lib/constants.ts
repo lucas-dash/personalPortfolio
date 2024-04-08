@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 2,
+    id: 4,
     title: 'Coin Wallet App',
     description:
       'Vytvořte si vlastní kryptoměnové portfolio. Můžete přidávat, upravovat a mazat své zakoupené kryptoměny z portfolia a sledovat celkový stav svých aktiv. Ukládání dat a přihlášení je vytvořeno pomocí Firebase. CoinCap API je použito pro získání aktuálních cen kryptoměn.',
@@ -35,24 +35,24 @@ export const projects = [
     link: 'https://lu-homolkova.vercel.app/',
   },
   {
-    id: 4,
+    id: 1,
     title: 'Event.log',
     description:
-      'Aplikace pro ukládání a prohlížení událostí po celém světě. Uživatelé mohou přidávat, upravovat a mazat své události. Autorizace a databáze pomocí Supabase. Mapbox jsem použil pro zobrazení událostí na mapě. Na této aplikaci stále ještě pracuji.',
-    image: '',
+      'Aplikace pro ukládání a prohlížení událostí po celém světě. Uživatelé mohou přidávat, upravovat a mazat své události. Autorizace a databáze pomocí Supabase. Mapbox GL jsem použil pro zobrazení událostí na mapě.',
+    image: '/event-log-map.png',
     techStack: [
       'Next.js',
       'Typescript',
       'Tailwindcss',
       'Shadcn UI',
       'Supabase',
-      'Mapbox',
+      'Mapbox GL',
     ],
     github: 'https://github.com/lucas-dash/event.log',
-    link: '',
+    link: 'https://event-log-project.vercel.app/dashboard',
   },
   {
-    id: 1,
+    id: 2,
     title: 'DevSpace',
     description:
       'Sociální síť pro vývojáře. Uživatelé mohou přidávat, upravovat a mazat své příspěvky, komentovat a lajkovat příspěvky ostatních uživatelů, ale mohou také prezentovat své dovednosti a informovat organizace o své dostupnosti pro práci. Pro autorizaci a správu databáze je využíván Supabase.',

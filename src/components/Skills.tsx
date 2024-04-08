@@ -1,7 +1,8 @@
+'use client';
+
 import { skills, softSkill, tools } from '@/lib/constants';
-import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
-import Image from 'next/image';
+import StaggerBadge from './StaggerBadge';
 
 export default function Skills() {
   return (
@@ -15,70 +16,23 @@ export default function Skills() {
         <div className="font-semibold flex items-center sm:text-lg justify-center">
           <h3>Tech Stack</h3>
         </div>
-        <section className="flex gap-4 flex-wrap justify-center max-w-5xl mx-auto">
-          {skills.map(({ id, title, icon }) => {
-            return (
-              <Badge
-                variant={'secondary'}
-                key={id}
-                className="flex items-center gap-1"
-              >
-                {icon && (
-                  <Image
-                    src={`/tech-icons${icon}`}
-                    alt={`${title} icon`}
-                    width={26}
-                    height={26}
-                    className="object-cover"
-                  />
-                )}
-                {title}
-              </Badge>
-            );
-          })}
-        </section>
+
+        <StaggerBadge badges={skills} />
+
         <Separator className="max-w-4xl mx-auto" />
 
         <div className="font-semibold flex items-center sm:text-lg justify-center">
           <h3>Tools</h3>
         </div>
 
-        <section className="flex gap-4 flex-wrap justify-center max-w-5xl mx-auto">
-          {tools.map(({ id, title, icon }) => {
-            return (
-              <Badge
-                variant={'secondary'}
-                key={id}
-                className="flex items-center gap-1"
-              >
-                {icon && (
-                  <Image
-                    src={`/tech-icons${icon}`}
-                    alt={`${title} icon`}
-                    width={22}
-                    height={22}
-                    className="object-cover"
-                  />
-                )}
-                {title}
-              </Badge>
-            );
-          })}
-        </section>
+        <StaggerBadge badges={tools} />
+
         <Separator className="max-w-md mx-auto" />
 
         <div className="flex items-center font-semibold sm:text-lg justify-center flex-wrap ">
           <h3>Soft Skills</h3>
         </div>
-        <div className="flex gap-4 flex-wrap justify-center max-w-5xl mx-auto">
-          {softSkill.map(({ id, title }) => {
-            return (
-              <Badge variant={'secondary'} key={id} className="text-center">
-                {title}
-              </Badge>
-            );
-          })}
-        </div>
+        <StaggerBadge badges={softSkill} />
       </article>
     </section>
   );
