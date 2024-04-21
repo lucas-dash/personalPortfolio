@@ -8,16 +8,16 @@ export default function About() {
         {'//About me'}
       </h2>
       <div className="font-inter sm:container leading-8">
-        <p className="">
-          Jako samouk ve web developmentu s důrazem na React jsem za poslední
-          dva roky získal podstatné znalosti a dovednosti, které aktivně
-          uplatňuji ve vlastních projektech. Tato cesta mi umožnila technicky i
-          kreativně se rozvíjet, přičemž kladu důraz na vizuálně přitažlivý
-          design a UX. K mým zkušenostem také patří práce s APIs a různými
-          knihovnami pro usnadnění vývoje. Ačkoliv jsem v profesionálním
-          prostředí nováčkem, s nadšením se těším na možnosti zapojit se do
-          reálných projektů, kde mohu přinést své nadšení, svěží pohled, přispět
-          vašemu týmu a zároveň se naučit nové dovednosti.
+        <p>
+          Ahoj, jmenuji se Lukáš Homolka a jsem frontend vývojář se zaměřením na
+          React a TypeScript. Již dva roky se věnuji programování jako samouk,
+          což mi umožnilo rychle se učit a adaptovat na nové technologie a
+          výzvy. Mám vášeň pro vytváření čistého, efektivního a uživatelsky
+          přívětivého kódu. V mém portfolio najdete projekty, které reflektují
+          můj růst jako vývojáře a mé schopnosti řešit praktické problémy
+          prostřednictvím kódu. Přistupuji k projektům s otevřeností pro nové
+          myšlenky a neustálou touhou se zlepšovat. Děkuji za vaši pozornost a
+          těším se na příležitost spolupracovat na vzrušujících projektech!
         </p>
       </div>
     </section>
